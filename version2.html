@@ -10,22 +10,26 @@
     
     <style>
       .bg-my {
-        background-color: #d8ebfc
+        background-color: #0d6efd2e;
+      }
+      .bg-img {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArlJREFUeNrsmMGqKjEQRDUGFDciuBAE//+rBAXBhSCKiILCK29dCvGu36rPLIakk8pAT9LdOcPL5XI6nW6322q1UmMwGKit93Q6nc/nsag7+Hg8X41S2r7f76c/jxsSZFjv6LNEJmi+v1FHO9xut+qPx+Pn8ynT6/XSezQaxamyfHZtyYqltM0+k1Km4/E4+nl2u527XshtPWr03mW53+/xdx1t87a08xaLhefJoq53oLr2q0Yl22w20k8mE3+4lLZ5hralldF4r0qZw5x1H49H5pTSNs/2tswuXS6XcurhcEiaUDeZQos6UlbTvgP8Vxawy5MsHAvlY8/JD0n8q6P9PYZyZHajjqjGpJRTZbdSbSsd8LJXS2mbPGqZxrwbFdK8ynq9dsBzxaFR+dijru6qaZvLM+9GOVVJND6WUV2tIotHfaQ/q7tS2p5UqrOqCGdlfOw7wd8z72kuhetomztW+mS+L0G9u0Jz7vCpTmhU1+6vpn0HeGmy5ZwOnERlT071uq7T1Difz16olLY5EXxNTcBLEvUx9h+Q8Xq9+j+U0rZUq56qCJf8mnumwpuUaig1fAKNatpmZ8vB9mLq19ySHP9yqmezmdpWVdP+IpovTPFOk737ThCa8UkwUuCW0nZvs0T+gMQvcqiUkQtBbpvVtM0VRK5Lrr5S7ObEptbwcp5QTTuEwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBg8DB4GD4OHwcPgYfAweBj8f9H+E2AACMcsqoO3fiAAAAAASUVORK5CYII=");
+        
       }
     </style>
     <title>Hello, world!</title>
   </head>
   <body class="bg-light">
 
-  <header class="text-center mt-4 mb-4">
-    <div class="container">
+  <header class="text-center pt-4 pb-4 bg-img">
+    <div class="container bg-img">
       <h2>ООО "КАССАНДРА"</h2>
       <h4 class="lead fs-4 ">Бухгалтерские и юридические услуги</h4>
     </div>
   </header>
 
   <main>
-    <section class="mb-4 pt-4 pb-4 bg-my">
+    <section class="pt-4">
       <div class="container">
         <h3>О компании</h3>
         <p>Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа новых предложений.</p>
@@ -33,8 +37,8 @@
       </div>
     </section>
 
-    <section class="mb-4">
-      <div class="container">
+    <section class=" pt-4 ">
+      <div class="container border border-2 border-primary p-3">
         <h3>Услуги</h3>
         <p>Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации систем массового участия. Товарищи! новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
         <p class="mb-0"><u>Бухгалтерские</u></p>
@@ -47,14 +51,25 @@
       </div>
     </section>
 
-    <section class="pt-4 pb-4 bg-my">
+    <section class="pt-4 pb-4">
       <div class="container">
         <h3>Контакты</h3>
-        <ul type="circle">
-          <li>Адрес: Санкт-Петербург, улица Радищева, 39Д (метро Чернышевская), посмотреть на <a href="https://yandex.ru/maps/-/CCUYv-fT9C" target="_blank">яндекс картах</a></li>
-          <li>E-mail: <a href="mailto:resultat@mail.ru">resultat@mail.ru</a></li>
-          <button type="button" class="btn btn-outline-success">Написать нам</button>
-        </ul>
+        <p>Наш офис распоагается по адресу: Санкт-Петербург, улица Радищева, 39Д (метро Чернышевская), посмотреть на <a href="https://yandex.ru/maps/-/CCUYv-fT9C" target="_blank">яндекс картах</a>. Напишите нам на e-mail <a href="mailto:resultat@mail.ru">resultat@mail.ru</a> или через форму ниже.</p>
+
+      <form class="text-center border border-2  p-3 mt-4 bg-my bg-img">
+        <fieldset>
+          <legend>Форма для связи</legend>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label d-flex">Ваш e-mail:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label d-flex">Сообщение:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </fieldset>
+      </form>
       </div>
     </section>
   </main>
